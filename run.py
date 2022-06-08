@@ -15,3 +15,10 @@ class GameBoard:
         row_number = 1
         for row in self.board:
             print("%d|%s|" % (row_number, "|" .join(row)))
+            row_number +=1
+
+class Battleship:
+    """
+    creates the number of ships,gets user input, and the miss/hit ships
+    """
+                
