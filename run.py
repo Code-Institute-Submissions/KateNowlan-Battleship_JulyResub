@@ -21,4 +21,5 @@ class Battleship:
     """
     creates the number of ships,gets user input, and the miss/hit ships
     """
-                
+    def __init(self, board):
+        self.board = board            
