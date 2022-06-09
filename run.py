@@ -66,7 +66,14 @@ def RunGame():
     #states the introductory information needed to start the game and 
     # sets the board with all the ships waiting to be hit
     input("Welcome to Battleships. \nPress ENTER to start!")
-    player1 = input("\nState your name to start\n>")                     
+    player1 = input("\nState your name to start\n>")
+    while player1 == "":
+        player1 = input("\nI didnt get that,please state your name\n>")
+    else:
+        print(f"\nOk, {player1}, let's begin..\n")
+    computer_board = GameBoard([[""] * 8 for i in range(8)])
+        
+                                 
                                    
                            
                         
