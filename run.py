@@ -52,6 +52,15 @@ class Battleship:
             return int(x_row) -1, GameBoard.get_letters_to_numbers()[y_column]
         except ValueError and KeyError:
             print("Not a valid input")
-            return self.get_user_input()       
+            return self.get_user_input()
+
+    def count_hit_ships():
+        #counts how many ships have been hit
+        hit_ships = 0
+        for row in self.board:
+            for column in row:
+                if column == "X":
+                    hit_ships +=1
+                                   
                            
                         
