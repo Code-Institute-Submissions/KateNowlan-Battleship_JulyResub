@@ -88,7 +88,20 @@ def RunGame():
         if computer_board.board[user_x_row][user_y_column] == "X":
             print("You sunk 1 of the Battleships!")
             user_guess_board.board[user_x_row][user_y_column] = "X"
-                
+        else:
+            print("You missed a Battleship..")
+            user_guess_board.board[user_x_row][user_y_column] = "-"
+        #check for win or lose
+        if Battleship.count_hit_ships(user_guess_board) == 5:
+            print("You hit all 5 Battleships!!")
+            break
+        else:
+            turns -= 1
+            print(f"You have {turns} turns remaining")
+            
+
+
+
 
 
 
