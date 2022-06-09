@@ -72,7 +72,10 @@ def RunGame():
     else:
         print(f"\nOk, {player1}, let's begin..\n")
     computer_board = GameBoard([[""] * 8 for i in range(8)])
-        
+    user_guess_board = GameBoard([[""] * 8 for in range(8)])
+    Battleship.create_ships(computer_board)
+
+
                                  
                                    
                            
