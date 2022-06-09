@@ -35,5 +35,23 @@ class Battleship:
             while self.board[self.x_row][self.y_column] == "X":
                 self.x_row, self.y_column = random.randint(0, 7), random.randint(0, 7)
             self.board[self.x_row][self.y_column] = "X"
-        return self.board        
+        return self.board
+
+    def get_user_input(self):
+        #defines user input needed for the game to start
+        try:
+            x_row = input("Enter the row number of the ship: ")
+            while x_row not in '12345678':
+                print('not a choice, please select a valid row number')
+                x_row = input("Enter the row number of the ship: ") 
+
+            y_column = input("Enter the column letter of the ship: ").upper()
+            while y_column not in "ABCDEFGH":
+                print('not a choice, please select a valid column letter')
+                y_column = input("Enter the column letter of the ship: ").upper()
+            return int(x_row) -1, GameBoard.get_letters_to_numbers()[y_column]
+        except ValueError and KeyError:
+            print("Not a valid input")
+            return self.get_user_input()       
+                           
                         
