@@ -61,6 +61,12 @@ class Battleship:
             for column in row:
                 if column == "X":
                     hit_ships +=1
+
+def RunGame():
+    #states the introductory information needed to start the game and 
+    # sets the board with all the ships waiting to be hit
+    input("Welcome to Battleships. \nPress ENTER to start!")
+    player1 = input("\nState your name to start\n>")                     
                                    
                            
                         
