@@ -98,6 +98,12 @@ def RunGame():
         else:
             turns -= 1
             print(f"You have {turns} turns remaining")
+        if turns == 0:
+            print("Sorry, you have run out of turns")
+            GameBoard.print_board(user_guess_board)
+            break
+
+            
             
 
 
