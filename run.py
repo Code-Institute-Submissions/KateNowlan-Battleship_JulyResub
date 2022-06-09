@@ -103,6 +103,9 @@ def RunGame():
             GameBoard.print_board(user_guess_board)
             break
 
+if  __name__ == '__main__':
+    RunGame()        
+
             
             
 
