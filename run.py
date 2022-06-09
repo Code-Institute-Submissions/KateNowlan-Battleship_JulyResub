@@ -84,7 +84,12 @@ def RunGame():
         while user_guess_board.board[user_x_row][user_y_column] == "-" or user_guess_board.board[user_x_row][user_y_column] == "X":
             print("You guessed that position already")
             user_x_row, user_y_column = Battleship.get_user_input(object)
-                 
+        #check for hit or miss
+        if computer_board.board[user_x_row][user_y_column] == "X":
+            print("You sunk 1 of the Battleships!")
+            user_guess_board.board[user_x_row][user_y_column] = "X"
+                
+
 
 
 
