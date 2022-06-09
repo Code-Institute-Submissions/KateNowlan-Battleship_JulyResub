@@ -18,8 +18,8 @@ class GameBoard:
         print("     ---------------" )
         row_number = 1
         for row in self.board:
-            print("%d|%s|" % (row_number, "|" .join(row)))
-            row_number +=1
+            print("%d|%s|" % (row_number, "|".join(row)))
+            row_number += 1
 
 class Battleship:
     """
@@ -54,7 +54,7 @@ class Battleship:
             print("Not a valid input")
             return self.get_user_input()
 
-    def count_hit_ships():
+    def count_hit_ships(self):
         #counts how many ships have been hit
         hit_ships = 0
         for row in self.board:
