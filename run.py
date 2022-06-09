@@ -13,12 +13,11 @@ class GameBoard:
         return letters_to_numbers
 
     def print_board(self):
-        #defines board structure
-        print("     A B C D E F G H" )
-        print("     ---------------" )
+        print("  A B C D E F G H")
+        print("  +-+-+-+-+-+-+-+")
         row_number = 1
         for row in self.board:
-            print("%d|%s|" % (row_number, "|".join(row)))
+            print("%d|%s|"  %  (row_number,  "|".join(row)))
             row_number += 1
 
 class Battleship:
@@ -71,8 +70,8 @@ def RunGame():
         player1 = input("\nI didnt get that,please state your name\n>")
     else:
         print(f"\nOk, {player1}, let's begin..\n")
-    computer_board = GameBoard([[""] * 8 for i in range(8)])
-    user_guess_board = GameBoard([[""] * 8 for i in range(8)])
+    computer_board = GameBoard([[" "] * 8 for i in range(8)])
+    user_guess_board = GameBoard([[" "] * 8 for i in range(8)])
     Battleship.create_ships(computer_board)
     #start the 10 turns
     turns = 10
