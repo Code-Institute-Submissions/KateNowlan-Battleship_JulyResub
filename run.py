@@ -78,6 +78,8 @@ def RunGame():
     turns = 10
     while turns > 0:
         GameBoard.print_board(user_guess_board)
+        #get user input
+        user_x_row, user_y_column = Battleship.get_user_input(object)
 
 
                                  
