@@ -59,7 +59,12 @@ As a site owner:
 5. #### You are asked to input your row guess
 6. #### You are asked to input your column guess
 7. #### You are told whether you hit or miss a battleship
-8. #### You are told how many turns you have remaining
-9. #### You are asked for your row and column again until either you win or run out of turns
-10. #### You are told you have run out of turns and the game is over
+8. #### Your guess whether a miss or hit is marked on the board
+9. #### You are told how many turns you have remaining
+10. #### You are asked for your row and column again until either you win or run out of turns
+11. #### You are told you have run out of turns and the game is over
+
+### Features to implement:
+
+- 
 
