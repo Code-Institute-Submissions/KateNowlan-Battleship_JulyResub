@@ -66,5 +66,17 @@ As a site owner:
 
 ### Features to implement:
 
-- 
+- Different types of battleships could be done
+- Bigger board to accomodate ships covering more than one square and possibly at diagonals too
+
+## Buildpacks Used:
+
+* Heroku-Python
+* Heroku-Nodejs
+
+## Libraries Used:
+
+* Random
+
+
 
