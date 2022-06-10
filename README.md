@@ -31,5 +31,21 @@ As a returning User:
 As a site owner:
 - I want to provide a fun simple game for users
 
+## UX Plane:
 
+1. ### Strategy:
+* Build a python based web application that runs on a mock terminal
+* Build a simple application with easy to follow instructions to play the game
+
+2. ### Scope
+* Build the application so that it runs on a mock terminal
+* Design a simple game which is easy to follow with no previous knowledge of Batlleships
+
+3. ### Structure
+* Build the entire game in one file to play in the terminal
+
+4. ### Skeleton
+
+5. ### Surface
+* This application should be easy to follow and not allow for empty values to be accepted
 
