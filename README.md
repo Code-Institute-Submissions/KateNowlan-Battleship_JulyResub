@@ -78,5 +78,28 @@ As a site owner:
 
 * Random
 
+## Testing
+
+Testing was primarily done in the terminal as i built the application as this was the easy thing to do. Just play around with the code. Once deployed the application ran in the terminal with minimal errors.
+
+The one thing i couldn't get right for a while was the width of the columns. It was incredibly narrow and too narrow to play. i resolved this by putting a space in my "" to make it " " and that made all the difference. Easy fix but took me a while to register where the problem was in the code.
+
+## Code Validation
+
+* The code was run through Pep8 to ensure standards were met.
+
+## Deployment
+
+These are the steps to deploy our project to the mock terminal in Heroku which is required:
+
+1. on the main dashboard on the right click the "create app" button
+2. click the settings tab and click on "config vars"
+3. write in a KEY of "PORT" and VALUE of "8000". Click "add"
+4. add the required buildpack of "python" first then "nodejs" in that order
+5. click on the deploy tab. Select Github as deployment method. Connect to your profile.
+6. search for the repository you want to use and click "connect"
+7. chose to automatically or manually deploy your project
+8. once built,click "view".
+
 
 
