@@ -49,3 +49,17 @@ As a site owner:
 5. ### Surface
 * This application should be easy to follow and not allow for empty values to be accepted
 
+## Features
+### Existing Features:
+
+1. #### Introductory message 
+2. #### Press ENTER to start
+3. #### State your name to begin the game
+4. #### Message telling you the game is about the start
+5. #### You are asked to input your row guess
+6. #### You are asked to input your column guess
+7. #### You are told whether you hit or miss a battleship
+8. #### You are told how many turns you have remaining
+9. #### You are asked for your row and column again until either you win or run out of turns
+10. #### You are told you have run out of turns and the game is over
+
