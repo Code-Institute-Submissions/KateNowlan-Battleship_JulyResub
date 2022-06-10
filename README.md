@@ -14,5 +14,7 @@ It is a game where you need to guess where the opponents ships are on a board to
 
 This game is easy and straightforward and no two games will be the same as the ships are randomly placed on the board thanks to a python library called random.
 
+### Target Audience:
 
+-
 
