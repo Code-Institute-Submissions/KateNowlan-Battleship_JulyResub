@@ -16,5 +16,20 @@ This game is easy and straightforward and no two games will be the same as the s
 
 ### Target Audience:
 
--
+Battleships is targeted at anyone. Any level of player can play. It's all down to how good your guesses are.
+Battleship has been around a long time and anyone of any age would appreciate it.
+
+### User Stories
+
+As a User:
+- I want to quickly understand the purpose of the game
+- Be easy to play
+
+As a returning User:
+- I want the playing method to still be easy and simple
+
+As a site owner:
+- I want to provide a fun simple game for users
+
+
 
