@@ -46,23 +46,51 @@ As a site owner:
 
 4. ### Skeleton
 
+![Flow chart](assets/images/lucidchart.png)
+
 5. ### Surface
 * This application should be easy to follow and not allow for empty values to be accepted
 
 ## Features
 ### Existing Features:
 
-1. #### Introductory message 
-2. #### Press ENTER to start
+1. #### Introductory message
+2. #### Press ENTER to start 
+
+![Flow chart](assets/images/intromsg.png)
+
 3. #### State your name to begin the game
+
+![Flow chart](assets/images/entername.png)
+
 4. #### Message telling you the game is about the start
+
+![Flow chart](assets/images/letsbegin.png)
+
 5. #### You are asked to input your row guess
+
+![Flow chart](assets/images/enterrow.png)
+
 6. #### You are asked to input your column guess
+
+![Flow chart](assets/images/entercolumn.png)
+
 7. #### You are told whether you hit or miss a battleship
+
+![Flow chart](assets/images/missship.png)
+
 8. #### Your guess whether a miss or hit is marked on the board
+
+![Flow chart](assets/images/misshitship.png)
+
 9. #### You are told how many turns you have remaining
+
+![Flow chart](assets/images/turnsleft.png)
+
 10. #### You are asked for your row and column again until either you win or run out of turns
 11. #### You are told you have run out of turns and the game is over
+![Flow chart](assets/images/nomoreturns.png)
+
 
 ### Features to implement:
 
