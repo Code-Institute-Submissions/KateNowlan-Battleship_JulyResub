@@ -114,7 +114,8 @@ The one thing i couldn't get right for a while was the width of the columns. It 
 
 ## Code Validation
 
-* The code was run through Pep8 to ensure standards were met.
+* The code was run through Pep8 to ensure standards were met. no significant issues detected.
+![pep8 checker](assets/images/pep8.png)
 
 ## Deployment
 
