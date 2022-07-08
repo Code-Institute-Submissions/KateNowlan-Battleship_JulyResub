@@ -1,16 +1,28 @@
 import random
 
+
 class GameBoard:
     """
     main board class. sets the size of the board and
     changes letters to numbers for ease of use
     """
+
     def __init__(self, board):
         self.board = board
 
+    @staticmethod
     def get_letters_to_numbers():
         # changes letters to numbers for ease of use
-        letters_to_numbers = {"A": 0, "B": 1, "C": 2, "D": 3, "E": 4, "F": 5, "G": 6, "H": 7}
+        letters_to_numbers = {
+            "A": 0,
+            "B": 1,
+            "C": 2,
+            "D": 3,
+            "E": 4,
+            "F": 5,
+            "G": 6,
+            "H": 7,
+        }
         return letters_to_numbers
 
     def print_board(self):
@@ -21,37 +33,49 @@ class GameBoard:
             print("%d|%s|" % (row_number, "|".join(row)))
             row_number += 1
 
+
 class Battleship:
     """
     creates the number of ships,gets user input, and the miss/hit ships
     """
-    def __init(self, board):
+
+    def __init__(self, board):
         self.board = board
+        self.x_row, self.y_column = 0, 0
 
     def create_ships(self):
         # creates 5 ships and places them randomly on the board
-        for i in range(5):
-            self.x_row, self.y_column = random.randint(0, 7), random.randint(0, 7)
+        for _ in range(5):
+            self.x_row, self.y_column = (
+                random.randint(0, 7),
+                random.randint(0, 7),
+            )
             while self.board[self.x_row][self.y_column] == "X":
-                self.x_row, self.y_column = random.randint(0, 7), random.randint(0, 7)
+                self.x_row, self.y_column = (
+                    random.randint(0, 7),
+                    random.randint(0, 7),
+                )
             self.board[self.x_row][self.y_column] = "X"
         return self.board
 
-    def get_user_input(self):
+    @staticmethod
+    def get_user_input():
         # defines user input needed for the game to start
         try:
-            x_row = input("Enter the row number of the ship: ")
-            while x_row not in '12345678':
-                print('not a choice, please select a valid row number')
+            x_row = int(input("Enter the row number of the ship: "))
+            while x_row not in [0, 1, 2, 3, 4, 5, 6, 7]:
+                print("not a choice, please select a valid row number")
                 x_row = input("Enter the row number of the ship: ")
             y_column = input("Enter the column letter of the ship: ").upper()
-            while y_column not in "ABCDEFGH":
-                print('not a choice, please select a valid column letter')
-                y_column = input("Enter the column letter of the ship: ").upper()
+            while y_column not in ["A", "B", "C", "D", "E", "F", "G", "H"]:
+                print("not a choice, please select a valid column letter")
+                y_column = input(
+                    "Enter the column letter of the ship: "
+                ).upper()
             return int(x_row) - 1, GameBoard.get_letters_to_numbers()[y_column]
-        except ValueError and KeyError:
+        except (ValueError, KeyError):
             print("Not a valid input")
-            return self.get_user_input()
+            return Battleship.get_user_input()
 
     def count_hit_ships(self):
         # counts how many ships have been hit
@@ -61,8 +85,9 @@ class Battleship:
                 if column == "X":
                     hit_ships += 1
 
+
 def RunGame():
-    # states the introductory information needed to start the game and 
+    # states the introductory information needed to start the game and
     # sets the board with all the ships waiting to be hit
     input("Welcome to Battleships. \nPress ENTER to start!")
     player1 = input("\nState your name to start\n>")
@@ -78,12 +103,14 @@ def RunGame():
     while turns > 0:
         GameBoard.print_board(user_guess_board)
         # get user input
-        user_x_row, user_y_column = Battleship.get_user_input(object)
+        user_x_row, user_y_column = Battleship.get_user_input()
         # check if duplicate guess
-        while user_guess_board.board[user_x_row][user_y_column] == "-" or 
-        user_guess_board.board[user_x_row][user_y_column] == "X":
+        while (
+            user_guess_board.board[user_x_row][user_y_column] == "-"
+            or user_guess_board.board[user_x_row][user_y_column] == "X"
+        ):
             print("You guessed that position already")
-            user_x_row, user_y_column = Battleship.get_user_input(object)
+            user_x_row, user_y_column = Battleship.get_user_input()
         # check for hit or miss
         if computer_board.board[user_x_row][user_y_column] == "X":
             print("You sunk 1 of the Battleships!")
@@ -103,19 +130,6 @@ def RunGame():
             GameBoard.print_board(user_guess_board)
             break
 
-if __name__ == '__main__':
-    RunGame()        
 
-            
-            
-
-
-
-
-
-
-
-                                 
-                                   
-                           
-                        
+if __name__ == "__main__":
+    RunGame()
