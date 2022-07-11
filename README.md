@@ -114,8 +114,14 @@ The one thing i couldn't get right for a while was the width of the columns. It 
 
 ## Code Validation
 
-* The code was run through Pep8 to ensure standards were met. no significant issues detected.
+* The code was run through Pep8 to ensure standards were met. No issues detected.
 ![pep8 checker](assets/images/pep8.png)
+
+## Bugs and Fixes
+
+* -Intended outcome: the code must continue to loop until a valid input is entered
+* -Issue found: infinite loops,blank inputs being accepted causing the application to crash.
+* -Solution: added a try and except and while loop.
 
 ## Deployment
 
