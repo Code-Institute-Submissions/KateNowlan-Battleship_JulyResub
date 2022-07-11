@@ -136,5 +136,14 @@ These are the steps to deploy our project to the mock terminal in Heroku which i
 7. chose to automatically or manually deploy your project
 8. once built,click "view".
 
+## Credits
+
+* Massive shoutout to my mentor Jack Wachira.
+
+## Resources used
+
+* Stack Overflow has been very helpful
+* Google always handy too
+
 
 
